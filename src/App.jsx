@@ -4,18 +4,18 @@ import { getShared, setShared } from "./sharedStorage.js";
 // ─── DATOS DEL MUNDIAL 2026 ───────────────────────────────────────────────────
 // ✏️  EDITA AQUÍ los grupos y equipos
 const GROUPS = {
-  A: ["Equipo A1", "Equipo A2", "Equipo A3", "Equipo A4"],
-  B: ["Equipo B1", "Equipo B2", "Equipo B3", "Equipo B4"],
-  C: ["Equipo C1", "Equipo C2", "Equipo C3", "Equipo C4"],
-  D: ["Equipo D1", "Equipo D2", "Equipo D3", "Equipo D4"],
-  E: ["Equipo E1", "Equipo E2", "Equipo E3", "Equipo E4"],
-  F: ["Equipo F1", "Equipo F2", "Equipo F3", "Equipo F4"],
-  G: ["Equipo G1", "Equipo G2", "Equipo G3", "Equipo G4"],
-  H: ["Equipo H1", "Equipo H2", "Equipo H3", "Equipo H4"],
-  I: ["Equipo I1", "Equipo I2", "Equipo I3", "Equipo I4"],
-  J: ["Equipo J1", "Equipo J2", "Equipo J3", "Equipo J4"],
-  K: ["Equipo K1", "Equipo K2", "Equipo K3", "Equipo K4"],
-  L: ["Equipo L1", "Equipo L2", "Equipo L3", "Equipo L4"],
+  A: ["México", "Sudáfrica", "Corea del Sur", "Chequia"],
+  B: ["Canadá", "Bosnia y Herzegovina", "Catar", "Suiza"],
+  C: ["Brasil", "Marruecos", "Haití", "Escocia"],
+  D: ["Estados Unidos", "Paraguay", "Australia", "Turquía"],
+  E: ["Alemania", "Curazao", "Costa de Marfil", "Ecuador"],
+  F: ["Paises Bajos", "Japón", "Suecia", "Túnez"],
+  G: ["Bélgica", "Egipto", "Irán", "Nueva Zelanda"],
+  H: ["España", "Cabo Verde", "Arabia Saudita", "Uruguay"],
+  I: ["Francia", "Senegal", "Irak", "Noruega"],
+  J: ["Argentina", "Argelia", "Austria", "Jordania"],
+  K: ["Portugal", "RD Congo", "Uzbekistán", "Colombia"],
+  L: ["Inglaterra", "Croacia", "Ghana", "Panamá"],
 };
 
 // ✏️  EDITA AQUÍ los cruces de ronda de 32
@@ -28,7 +28,50 @@ const R32_SEEDS = [
 ];
 
 // ✏️  Emojis de bandera por equipo
-const FLAGS = {};
+const FLAGS = {
+  "Alemania": "🇩🇪",
+  "Arabia Saudita": "🇸🇦",
+  "Argelia": "🇩🇿",
+  "Argentina": "🇦🇷",
+  "Australia": "🇦🇺",
+  "Austria": "🇦🇹",
+  "Bélgica": "🇧🇪",
+  "Brasil": "🇧🇷",
+  "Cabo Verde": "🇨🇻",
+  "Canadá": "🇨🇦",
+  "Colombia": "🇨🇴",
+  "Corea del Sur": "🇰🇷",
+  "Costa de Marfil": "🇨🇮",
+  "Costa Rica": "🇨🇷",
+  "Croacia": "🇭🇷",
+  "Curazao": "🇨🇼",
+  "Ecuador": "🇪🇨",
+  "Egipto": "🇪🇬",
+  "Arabia Saudita": "🇦🇪",
+  "Escocia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  "España": "🇪🇸",
+  "Estados Unidos": "🇺🇸",
+  "Francia": "🇫🇷",
+  "Ghana": "🇬🇭",
+  "Haití": "🇭🇹",
+  "Inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  "Irán": "🇮🇷",
+  "Japón": "🇯🇵",
+  "Marruecos": "🇲🇦",
+  "México": "🇲🇽",
+  "Noruega": "🇳🇴",
+  "Nueva Zelanda": "🇳🇿",
+  "Países Bajos": "🇳🇱",
+  "Panamá": "🇵🇦",
+  "Paraguay": "🇵🇾",
+  "Portugal": "🇵🇹",
+  "Qatar": "🇶🇦",
+  "Senegal": "🇸🇳",
+  "Sudáfrica": "🇿🇦",
+  "Túnez": "🇹🇳",
+  "Uruguay": "🇺🇾",
+  "Uzbekistán": "🇺🇿"
+};
 const flag = t => FLAGS[t] || "⚽";
 
 const ADMIN_PIN = "1234";
